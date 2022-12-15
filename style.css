@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(200, 200, 200);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    padding: 0 40px;
+    width: 1440px;
+    height: 94px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*Теперь работает)*/
+}
+nav{
+    display: flex;
+}
+header img{
+    height: 24px;
+}
+.buttom-box{
+    display: flex;
+}
+/* На все кнопки навесил общие стили так как они одинаковые */
+nav p{ 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #141414;
+}
+
+nav a{
+    text-decoration: none;
+}
+nav a:nth-child(1){
+    margin-right: 46px;
+
+}
+nav a:nth-child(2){
+    margin-right: 75px;
+
+}
+nav a:nth-child(3), nav a:nth-child(4)
+{
+    margin-right: 26px;
+}
+
+
+.big-box{
+    width: 1440px;
+    background-color: rgb(255, 255, 255);
+}
+.buttom-box button:nth-child(1){
+    width: 94px;
+    height: 54px;
+    border: 2px solid #F8F4F4;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.buttom-box button:nth-child(1) p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #333333;
+    text-align: center;
+}
+.buttom-box button:nth-child(2){
+    width: 153px;
+    height: 54px;
+    background: #0099FF;
+    border-radius: 8px;
+    border: 2px solid #0099FF;
+}
+.buttom-box button:nth-child(2) p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.email-box{
+    display: flex;
+    margin-top: 31px;
+}
+.box-heading{
+    margin-top: 46px;
+}
+.join{
+    margin-top: 46px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #B2B2B2;
+}
+.img-box{
+    margin: 10px 160px 0 160px;
+    display: flex;
+}
+.box-heading h1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 110px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: rgba(14, 16, 22, 0.95);
+    width: 893px;
+}
+.box-heading p{
+    margin: 73px auto 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+    color: #35393F;
+    width: 509px;
+}
+.email-box form input{
+    width: 300px;
+    height: 58px;
+    background: #FFFFFF;
+    border-radius: 8px 0px 0px 8px;
+    border: 2px solid #0099FF;
+}
+.email-box button p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding: 15px 17px 15px 15px;
+}
+.email-box button{
+    width: 157px;
+    height: 58px;
+    background: #0099FF;
+    border-radius: 0px 8px 8px 0px;
+    border: 2px solid #0099FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email-box form input::placeholder{
+    padding-left: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #B2B2B2;
+}
+
+
+
+.hire-box{
+    display: flex;
+    margin: 140px 140px 0;
+    
+}
+.text-1 p:nth-child(1){
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #0C9F64;
+}
+.text-1 h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 1.5px;
+    color: rgba(14, 16, 22, 0.95);
+    width: 369px;
+    height: 192px;
+    margin-top: 15px;
+}
+.hire-box .text-1 p:nth-child(3){
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 31px;
+    color: rgba(14, 16, 22, 0.95);
+    margin-top: 24px;
+}
+.text-1 button{
+    margin-top: 26px;
+}
+
+.learnMoreButton{
+    width: 136px;
+    height: 54px;
+    border: 2px solid #F8F4F4;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #333333;
+    background-color: white;
+}
+
+.photo-1{
+    margin-left: 91px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.create{
+    display: flex;
+    margin: 209px 163px 0 140px;
+}
+.photo-2{
+    display: flex;
+    flex-direction: column;
+}
+.text-2{
+    margin-left: 40px;
+    
+}
+.text-2 p:nth-child(1){
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FEC104;
+}
+.text-2 h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 57px;
+    line-height: 64px;
+    letter-spacing: 1.5px;
+    color: rgba(14, 16, 22, 0.95);
+    margin-top: 15px;
+}
+.text-2 p:nth-child(3){
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 31px;
+    color: rgba(14, 16, 22, 0.95);
+    margin-top: 24px;
+}
+.text-2 button{
+    width: 136px;
+    height: 54px;
+    border: 2px solid #F8F4F4;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #333333;
+    margin-top: 26px;
+}
+.dob{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: rgba(14, 16, 22, 0.4);
+    margin-top: 10px;
+}
+.dob1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: rgba(14, 16, 22, 0.4);
+    margin-top: 10px;
+}
+.club{
+    margin-top: 210px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 1240px;
+    background: #202E78;
+    border-radius: 20px;
+}
+.club h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    margin-top: 24px;
+}
+/* Почитай про дочерние селекторы и в чём разница между nth child и > */
+.club > p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 31px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 25px;
+    width: 700px;
+}
+.club button{
+    width: 213px;
+    height: 54px;
+    border: 2px solid #F8F4F4;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #F4F6F8;
+    background-color: #202E78;
+    margin-top: 69px;
+}
+.two-div-box{
+    padding: 40px 40px 100px 40px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+.dapp{
+    padding: 40px 40px 70px 40px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background: #000639;
+    height: 520px;
+    border-radius: 0px 20px 20px 0px;
+}
+.dapp img{
+    margin-bottom: 40px;
+}
+.dapp p{
+    color: white;
+    text-align: left;
+    font-weight: 400;
+
+}
+.dapp p:nth-child(2){
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 21px;
+}
+.dapp p:nth-child(3){
+    font-size: 22px;
+    line-height: 31px;
+}
+
+
+.dapp button{
+    background-color: #000639;
+}
+
+
+
+.big-footer-box{
+    width: 1240px;
+    height: 640px;
+    background: rgba(127, 90, 90, 0.95);
+    border-radius: 20px;
+    margin: 80px auto 50px;
+    display: flex;
+    flex-direction: column;    
+    background: rgba(0, 0, 0, 0.95);
+}
+.header-footer-2{
+    display: flex;
+    margin-top: 76px;
+    margin-left: 40px;
+}
+.header-footer{
+    margin-top: 26px;
+}
+.header-footer img{
+    margin-left: 40px;
+}
+.header-footer button{
+    margin-left: 945px;
+    width: 130px;
+    height: 39px;
+    background: #029EFF;
+    border-radius: 8px;
+    border: 2px solid #029EFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+
+.element-1, .element-3{
+    flex-basis: 222px;
+}
+.element-2, .element-4{
+    flex-basis: 333px;
+}
+.header-footer-2 p{
+    margin-bottom: 20px;
+}
+
+/* Если для элементов стили повторяются можно сделать перечисление через запятую */
+.element-1 p:nth-child(5), .element-2 p:nth-child(3), .element-3 p:nth-child(4){
+    margin-bottom: 40px;
+}
+
+/* new-2 и new-3 сделать спомощью псевдо класса after, это удобнее чем делать отдельный текст */
+.new-2{
+    position: relative;
+}
+.new-2::after{
+    content: 'new';
+    position: absolute;
+    width: 42px;
+    height: 23px;
+    background: #F64775;
+    border-radius: 15px;
+    margin-left: 10px;
+    top: 4px;
+    color: white;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+}
+
+
+.new-3{
+    position: relative;
+}
+.new-3::after{
+    content: '2';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background: #FC4945;
+    border-radius: 10px;
+    margin-left: 10px;
+    top: 4px;
+    color: white;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.sign-up-title{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.sign-up{
+    height: 40px;
+    display: flex;
+}
+.sign-up input{
+    height: 100%;
+    width: 256px;
+    background: rgba(119, 130, 145, 0.3);
+    border-radius: 8px 0px 0px 8px;
+    outline: none;
+    border: none;
+    padding: 20px;
+    color: white;
+}
+.sign-up button{
+    width: 78px;
+    height: 100%;
+    background: #595D68;
+    border-radius: 0px 8px 8px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.img-box-4{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 25px;
+}
+.img-box-4 button:nth-child(1){
+    background: #CD486B;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+}
+.img-box-4 button:nth-child(2){
+    background: #007BB6;
+    border-radius: 20px;
+    margin-left: 8px;
+    width: 40px;
+    height: 40px;
+
+}
+
+.img-box-4 button:nth-child(3){
+    background: #4099FF;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+}
+
+
+/* Создал классы для всех видов кнопок в footer, и навесил эти классы на соответстубущие, таким образом избаливлся от повторения кода */
+.white-button{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.grey-button{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #778291;
+}
+.yellow-button{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FEC104;
+}
+.green-button{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0C9F64;
+}
